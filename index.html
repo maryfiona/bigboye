@@ -69,11 +69,30 @@
                 <a href="gallery.html" class="nav-item nav-link">Gallery</a>
                 <a href="contact.html" class="nav-item nav-link">Contact</a>
             </div>
-            <a href="" class="btn btn-primary rounded-0 py-2 px-lg-4 d-none d-lg-block">Appointment<i class="fa fa-arrow-right ms-3"></i></a>
+            <a href="" onclick="openModal()" class="btn btn-primary rounded-0 py-2 px-lg-4 d-none d-lg-block">Appointment<i class="fa fa-arrow-right ms-3"></i></a>
         </div>
     </nav>
     <!-- Navbar End -->
 
+<style>
+    .modalParent{
+        height: 30em;
+        width: 23em;
+        background-color: white;
+        position: absolute;
+        left: 30em;
+        z-index: 9;
+        display: none;
+    }
+</style>
+    <div id="" class="modalParent">
+        <div class="wrapper">
+            
+        </div>
+    </div>
+    <script>
+
+    </script>
 
     <!-- Carousel Start -->
     <div class="container-fluid p-0 mb-5 wow fadeIn" data-wow-delay="0.1s">
@@ -150,7 +169,6 @@
     </div>
     <!-- About End -->
 
-
     <!-- Service Start -->
     <div class="container-xxl py-5">
         <div class="container">
@@ -166,7 +184,7 @@
                         </div>
                         <div class="ps-4">
                             <h3 class="text-uppercase mb-3">Haircut</h3>
-                            <p>Looking for a new flattering haircut? Get the best hair cut from bigboye.</p>
+        +                    <p>Looking for a new flattering haircut? Get the best hair cut from bigboye.</p>
                             <span class="text-uppercase text-primary">contact us</span>
                         </div>
                         <a class="btn btn-square" href=""><i class="fa fa-plus text-primary"></i></a>
