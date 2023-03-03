@@ -74,12 +74,12 @@
                 <a href="gallery.html" class="nav-item nav-link">Gallery</a>
                 <a href="contact.html" class="nav-item nav-link">Contact</a>
             </div>
-            <a href="" onclick="openModal()" class="btn btn-primary rounded-0 py-2 px-lg-4 d-none d-lg-block">Appointment<i class="fa fa-arrow-right ms-3"></i></a>
+            <a  href="login.html"  class="btn btn-primary rounded-0 py-2 px-lg-4 d-none d-lg-block">Appointment<i class="fa fa-arrow-right ms-3"></i></a>
         </div>
     </nav>
     <!-- Navbar End -->
 
-<style>
+<!-- <style>
     .modalParent{
         height: 30em;
         width: 23em;
@@ -90,9 +90,9 @@
         display:none ;
     }
 </style>
-    <div id="" class="modalParent">
+    <div  class="modalParent">
         <div class="wrapper">
-            <form style="background-image:url(img/log.jfif);background-size: cover;height: 30em;">
+            <form onclick="showForm"  id="myForm" style="background-image:url(img/log.jfif);background-size: cover;height: 30em;">
             <h1>sign in</h1>
         
             <input style="width: 15em;height: 20px ;margin-left: 20px; outline: none; border: none; background-color: #00000028; " type="text" name="" placeholder="username">
@@ -112,8 +112,14 @@
         </div>
     
     <script>
+        function showForm() {
+  var form = document.getElementById("myForm");
+  form.style.display = "block";
+  var button = document.getElementById("openModal");
+button.addEventListener("click", showForm);
+}
 
-    </script>
+    </script> -->
 
     <!-- Carousel Start -->
     <div class="container-fluid p-0 mb-5 wow fadeIn" data-wow-delay="0.1s">
